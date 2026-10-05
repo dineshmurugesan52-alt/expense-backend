@@ -7,7 +7,7 @@ module.exports = cds.service.impl(async function () {
     this.on("READ", ExpenseChart, async (req) => {
 
     const data = await SELECT.from(Expenses);
-
+        console.log("Fetched Data:", data);
     const chartData = {};
 
     data.forEach((expense) => {
