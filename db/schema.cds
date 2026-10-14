@@ -16,3 +16,12 @@ entity ExpenseChart{
     accommodation : Decimal(10,2);
     others : Decimal(10,2);
 }
+entity ExpenseMonthly{
+    key ID : UUID;
+    month : String;
+    totalExpense:Decimal(10,2);
+    food:Decimal(10,2);
+    travel:Decimal(10,2);
+    accommodation:Decimal(10,2);
+    others:Decimal(10,2);
+}
